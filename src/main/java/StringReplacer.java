@@ -8,14 +8,8 @@ public class StringReplacer implements StringTransformer {
     }
 
     public void execute(StringDrink drink) {
-        StringBuilder sb = new StringBuilder(drink.getText());
-        for (int i = 0; i < sb.length(); i++) {
-            char currentChar = sb.charAt(i);
-            if (currentChar == current) {
-                sb.replace(i, i+1, String.valueOf(toReplace));
-            }
-        }
-        String newText = sb.toString();
-        drink.setText(newText);
+        String toChange = drink.getText();
+        toChange = toChange.replace(current, toReplace);
+        drink.setText(toChange);
     }
 }
