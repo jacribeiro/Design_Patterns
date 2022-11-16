@@ -11,9 +11,11 @@ public class StringBar extends Bar {
 
     public void startHappyHour() {
         this.happyHour = true;
+        this.notifyObservers();
     }
 
     public void endHappyHour() {
         this.happyHour = false;
+        this.notifyObservers();
     }
 }
