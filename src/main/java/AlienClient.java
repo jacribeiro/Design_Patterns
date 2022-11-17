@@ -1,4 +1,4 @@
-public abstract class AlienClient implements Client{
+public abstract class AlienClient implements Client {
     private OrderingStrategy strategy;
 
     public AlienClient() {
