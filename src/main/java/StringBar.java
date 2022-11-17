@@ -6,7 +6,7 @@ public class StringBar extends Bar {
     }
 
     public boolean isHappyHour() {
-        return this.happyHour == true;
+        return this.happyHour;
     }
 
     public void startHappyHour() {
